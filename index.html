@@ -2,40 +2,46 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>24点穷举</title>
 <style>
+/* 基准：1rem = 16px；手机会自动缩放根字体大小 */
+html {
+    font-size: max(14px, min(18px, 2.6vw));
+}
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body{
     height:100%;
     background:#000;
     color:#0f0;
     font-family:Consolas,monospace;
-    font-size:13px;
+    font-size:1rem;
     overflow:hidden;
 }
 #top-notice{
     width:100%;
-    height:28px;
-    line-height:28px;
+    height:2.25rem;
+    line-height:2.25rem;
     text-align:center;
     background:#111;
     border-bottom:#222 solid 1px;
 }
 #screen{
     width:100%;
-    height:calc(100% - 68px);
+    height:calc(100% - 4.75rem);
     overflow:auto;
-    white-space:pre;
+    white-space:pre-wrap;
+    padding:0.5rem;
 }
 #input-bar{
-    height:40px;
+    height:2.5rem;
     display:flex;
     align-items:center;
-    padding:0 12px;
+    padding:0 0.75rem;
     border-top:#222 solid 1px;
     background:#000;
 }
-.prompt{color:#0f0;margin-right:8px;}
+.prompt{color:#0f0;margin-right:0.5rem;}
 #inp{
     flex:1;
     background:transparent;
@@ -271,4 +277,4 @@ window.onload = async ()=>{
 }
 </script>
 </body>
-</html>
+<
